@@ -124,18 +124,4 @@ if __name__=="__main__":
     color = Color()
     book_title, image_link, book_resume, book_description = client.get_book_of_the_day(url)
     message = book_description
-    bot = telepot.Bot('468797274:AAEZZcDGCiDXk6jJAV84PLOMc1_RSXzd2IY')
-    bot.sendMessage(469707767, '*'+ book_title + '* \n' + book_resume, parse_mode='Markdown')
-    bot.sendPhoto(469707767, image_link)
-    bot.message_loop(handler, run_forever=True)
-
-    #bot.sendMessage(469707767, book_title + book_resume + book_description)
-    #bot.sendPhoto(469707767, image_link)
-
-
-    #response = bot.getUpdates()
-    #print response
-    #print bot.getMe()
-    #bot.sendMessage(469707767, book_title)
-    #img_src="https://www.packtpub.com/sites/default/files/9781786463128.png"
-    #bot.sendPhoto(469707767, image_link)
+   
